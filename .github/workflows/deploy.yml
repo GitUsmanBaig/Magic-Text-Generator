@@ -22,5 +22,5 @@ jobs:
           npm install -g vercel
           vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
         env:
-          VERCEL_PROJECT_ID: team_dv0ArAmKiRvebUuY56E3TZtJ
-          VERCEL_ORG_ID: prj_D3jUz4xYdqsP4JGpFv6rbSuh64KT
+          VERCEL_PROJECT_ID: prj_tzPh83fOq6duk3HSEMFxXS5G8J6g
+          VERCEL_ORG_ID: team_dv0ArAmKiRvebUuY56E3TZtJ
