@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,11 +16,10 @@ jobs:
           python-version: '3.8'
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Deploy to Vercel
         run: |
-          npm i -g vercel
+          npm install -g vercel
           vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
         env:
           VERCEL_PROJECT_ID: team_dv0ArAmKiRvebUuY56E3TZtJ
